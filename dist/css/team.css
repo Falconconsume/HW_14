@@ -276,8 +276,6 @@
   color: white;
   display: grid;
   grid-template-areas: "logo info" "logo navigation";
-  justify-content: space-between;
-  gap: 30px;
 }
 .header_nav_info {
   grid-area: info;
@@ -292,7 +290,15 @@
   .header {
     grid-template-columns: 1fr;
     grid-template-areas: "info" "logo" "navigation";
+    justify-content: space-between;
+    gap: 30px;
   }
+}
+
+.header_logos_a {
+  align-items: center;
+  display: flex;
+  gap: 10px;
 }
 
 @media (max-width: 768px) {

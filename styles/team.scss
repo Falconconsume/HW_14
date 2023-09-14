@@ -361,8 +361,7 @@ $space-container:60px;
     grid-template-areas:
     "logo info"
     "logo navigation";
-    justify-content: space-between;
-    gap: 30px;
+    
     &_nav_info {
         grid-area: info;
     }
@@ -372,14 +371,22 @@ $space-container:60px;
     &_nav_links {
         grid-area: navigation;
     }
-    
     @media (max-width:768px) {
         grid-template-columns: 1fr;
         grid-template-areas: 
         "info"
         "logo"
         "navigation";
+        justify-content: space-between;
+        gap: 30px;
     }
+    
+}
+
+.header_logos_a {
+    align-items: center;
+    display: flex;
+    gap: 10px;
 }
 
 @media (max-width:768px) {
